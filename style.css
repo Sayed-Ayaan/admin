@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* font-size: 2vh; */
+}
+
+.container{
+    display: grid;
+    /* height: 100%; */
+    grid-template-columns: repeat(6,1fr); 
+    grid-template-rows: repeat(5, 20vh);
+    /* gap: 5px; */
+}
+
+/* SIDE BAR */
+.dashboard{
+    grid-row: 1/-1;
+    grid-column: 1;
+    background-color: rgb(1, 155, 206);
+    color: white;
+    font-size: 18px;
+}
+
+#dashboardLogo{
+    display: flex;
+    flex: 1;
+    padding-top: 10px;
+}
+#dashboardLogo>h2{
+    padding: 10px;
+    font-size: 20x;
+}
+.dashboard-content,
+.setting{
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.dashboard-content>ul,
+.setting>ul{
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    list-style: none;
+}
+.menu,
+.settingContent{
+    padding: 0px 0px 22px 30px;
+}
+
+.container img{
+    margin-right: 5px;
+}
+/* TOP PART */
+.header{
+    grid-row: 1;
+    background-color: pink;
+    grid-column: 2/-1;
+    border: 5px solid brown;
+}
+
+
+/* MAIN BODY */
+.content{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 40px 1fr 1fr 50px;
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    gap: 25px;
+}
+
+#main-title{
+    grid-column: 1/-1;
+    height: 25px;
+    padding: 10px;
+
+}
+
+/* PROJECTS BOX */
+.project{
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/-2;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 25px;
+}
+
+.projects{
+    border: 2px solid black;
+    background-color: lightcoral;
+
+}
+
+/* ANNOUNCEMENT BOX*/
+
+.announcement{
+    grid-column: 3;
+    grid-row: 2/3;
+}
+
+/* TRENDING BOX */
+
+.trending{
+    grid-column: 3;
+    grid-row: 3/5;
+    height: 25px;
+    padding: 10px;
+}
+
+#trending-names{
+    grid-column: 3;
+    margin-top: 5vh;
+    grid-row: 3/4;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly   ;    
+}
