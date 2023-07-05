@@ -8,6 +8,8 @@
 </head>
 <body>
     <div class="container">
+
+        <!-- DASHBOARD -->
         <section class="dashboard">
             <div id="dashboardLogo">
                 <img src="dashboard.png" alt="Dashboard logo"><h2>Dashboard</h2>
@@ -30,9 +32,41 @@
                 </ul>
             </div>
         </section>
+
+    <!--HEADER  -->
         <header class="header">
-            <p>asd</p>
+            <div class="row1">
+                <img src="search.png" alt="search">
+                <form id="searchBar" method="get" onsubmit="false">
+                    <label for="search"></label> 
+                    <input id="search" type="text" name="searchBar">        
+                </form>
+
+                <div class="row1Content">
+                    <img id="alarm" src="alarm.png" alt="alarm">
+                    <img id="profile" src="dp.png" alt="profile Picture">
+                    <h3>Morgan Oakley</h2>
+                 </div>
+            </div>
+
+            <div class="row2">
+                <div class="greet">
+                    <img id="profileRow2" src="dp.png" alt="profile picture">
+                    <div>
+                        <p id="hello">Hi there,</p>
+                        <p id="name">Morgan Oakley (@morgan)</p>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="btns">New</button>
+                    <button type="button" class="btns">Upload</button>
+                    <button type="button" class="btns">Share</button>
+                </div>
+            </div>
         </header>
+
+        <!-- CONTENT -->
         <main class="content">
             <h3 id="main-title"> Your Projects</h3>
             <section class="project">
