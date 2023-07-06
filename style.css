@@ -193,9 +193,8 @@
     box-shadow: inset 10px 0px 0px 0px orange;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    max-height: 10em;
+    max-height: 12em;
     overflow: auto;
-
 }
 
 .projectContent{
@@ -207,13 +206,16 @@
 }
 
 .projectContent>p{
+    padding-top: 10px;
     color: var(--para-color);
 }
 
 .projectChanges{
-    padding: 10px 0px 20px 200px;
-    display: flex;
-    justify-content: space-evenly;
+    padding: 30px 0px 20px 250px;
+    /* display: flex;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
 }
 
 .projectChanges img{
@@ -269,11 +271,13 @@
 
 .trending{
     grid-row: 2;
+    display: grid;
+    grid-template-rows: 44px 1fr;
+    margin-top: 20px;
 }
 .trending>h3{
     height: 25px;
     padding: 10px;
-    margin-top: 30px;
 }
 
 #trending-names{
@@ -281,4 +285,21 @@
     background-color: #fff;
     flex-direction: column;
     justify-content: space-evenly;    
+    border-radius: 10px;
+    box-shadow: 0px 0.2rem 5px grey;
+}
+
+.names{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.trendingName{
+    font-weight: bold;
+}
+
+.know{
+    color: var(--para-color);
 }
